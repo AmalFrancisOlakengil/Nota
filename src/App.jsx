@@ -1,14 +1,17 @@
 
-import Database from "@tauri-apps/plugin-sql";
-import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import Home from "./components/Home/Home";
+import Folders from "./components/Folders/Folders";
 function App() {
- 
-  
-
   return (
     <main className="container">
-      <h1>hello world</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/folders" element={<Folders />} />
+        </Routes>
+      </BrowserRouter>
     </main>
   );
 }

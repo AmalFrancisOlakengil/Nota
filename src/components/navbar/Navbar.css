@@ -1,0 +1,20 @@
+.navbar{
+    width: 100%;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+.nav-links li a:hover{
+    border: solid black 2px;
+    border-radius: 20px;
+  
+}
